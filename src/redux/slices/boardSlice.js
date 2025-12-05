@@ -10,15 +10,15 @@ const initialColumns = [
 const initialTasks = [
   {
     id: "1",
-    title: "Create wireframes",
-    description: "Rough layout for main dashboard",
+    title: "Add simple form validation",
+    description: "Check that required fields are filled",
     status: "todo",
     createdAt: new Date().toISOString(),
   },
   {
     id: "2",
-    title: "Set up Redux store",
-    description: "Configure auth and board slices",
+    title: "Practice CSS styling",
+    description: "Add colors, padding, and borders to a sample page",
     status: "in-progress",
     createdAt: new Date().toISOString(),
   },
@@ -91,5 +91,3 @@ export const {
 } = boardSlice.actions;
 
 export default boardSlice.reducer;
-
-

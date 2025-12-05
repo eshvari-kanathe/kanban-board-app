@@ -52,6 +52,7 @@ const Login = () => {
                 autoClose: 1500,
                 transition: Bounce,
               });
+              actions.resetForm();
               return;
             }
 
