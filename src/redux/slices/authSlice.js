@@ -7,7 +7,7 @@ const getStoredUser = () => {
   try {
     return data ? JSON.parse(data) : null;
   } catch (error) {
-    console.error("Failed to parse stored user", error);
+    console.error("Unable to read saved user data", error);
     return null;
   }
 };

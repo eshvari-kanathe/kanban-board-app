@@ -15,17 +15,17 @@ import { toast } from "react-toastify";
 import DeleteConfirmModal from "../components/DeleteConfirmModal";
 
 const Dashboard = () => {
-  const dispatch = useDispatch();
-  const { columns, tasks, searchText, sortOrder } = useSelector(
-    (state) => state.board
-  );
-
   // state for add and delete modal
   const [taskModal, setTaskModal] = useState({
     isOpen: false,
     mode: "add",
     task: { id: null, title: "", description: "", status: "todo" },
   });
+
+  const { columns, tasks, searchText, sortOrder } = useSelector(
+    (state) => state.board
+  );
+  const dispatch = useDispatch();
 
   // filter and sorting
   const tasksByColumn = useMemo(() => {
